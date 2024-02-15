@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElephantHouse | Beverages</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        .topic-section {
+            width: 100%;
+            height: 250px;
+            background: url(../img/beverges_topic_bg.jpg) no-repeat fixed 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 0;
+        }
+        .topic-section::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .topic-section h1 {
+            color: white;
+            font-size: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            margin: 0;
+        }
+        .beverage-section {
+            width: 100%;
+            height: fit-content;
+        }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 60px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .beverage-section .container {
+            width: 80%;
+            margin: auto;
+        }
+        .beverage-section .container .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 25px 0;
+            border-bottom: 1px solid #222;
+            padding-bottom: 50px;
+        }
+        .card {
+            text-align: center;
+            margin:20px 25px;
+            cursor: pointer;
+            transition: scale .2s ease-in;
+            background-color: white;
+        }
+        .card:hover {
+            scale: 1.025;
+        }
+        .card img {
+            width: 175px;
+            height: auto;
+        }
+        .natural-nutrition {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .sitePath a:hover {
+            text-decoration: underline;
+        }
+    </style>
+<body>
+    <!------------------------------------------ Navigation Bar ------------------------------------------->
+    <header class="header">
+        <div class="top-navBar">
+            <div class="container">
+                <ul class="top-navLinks flex">
+                    <li><a href="https://www.keells.com/">John Keels Group</a></li>
+                    <li><a href="https://www.elephanthouse.lk/news/">NEWS</a></li>
+                    <li><a href="https://www.elephanthouse.lk/media-hub/">Media Hub</a></li>
+                    <li><a href="https://www.elephanthouse.lk/media-hub/financial-reports/annual-reports/">Financial Reports</a></li>
+                    <li><a href="https://www.elephanthouse.lk/corporate/careers/">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="middle-navBar relative" id="middle-navBar">
+            <div class="searchBar">
+                <img class="searchIcon" src="../img/magnifying-glass.png" alt="search-icon">
+                <input type="text" name="searchText" class="searchText" id="searchText" placeholder="Search Here...">
+            </div>
+            <div class="container">
+                <ul class="main-navLinks">
+                    <li><a href="corporate.html">Corporate</a></li>
+                    <li class="active">
+                        <a href="Beverages.html">Beverages</a>
+                        <!-- <ul class="innerList">
+                            <li></li>
+                        </ul> -->
+                    </li>
+                    <li class="logo"><a href="../index.html"><img src="../img/logo.png" alt="logo"></a></li>
+                    <li><a href="frozen.html">Frozens</a></li>
+                    <li><a href="export.html">Exports</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------------------------ Page topic ------------------------------------------->
+    <section class="topic-section">
+        <h1>BEVERAGES</h1>
+    </section>
+
+    <!----------------------------------- Website Path row ------------------------------------------->
+    <div class="sitePath" style="width: 100%; height: 30px; margin-top: 50px;">
+        <div class="container">
+            <a href="../index.html">Homepage</a>
+            <span>  >  </span>
+            <a href="./beverages.html">Beverages</a>
+        </div>
+    </div>
+
+    <!------------------------------------------ Product ection ------------------------------------------->
+    <section class="beverage-section">
+        <h1>Refreshments</h1>
+        <div class="container">
+            <div class="row refreshment">
+                <div class="card">
+                    <img src="../img/beverages/refrehment/creamsoda.png" alt="Cream Soda">
+                    <h3>Cream Soda</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/egb.png" alt="EGB">
+                    <h3>EGB</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/ginger-ale.png" alt="ginger-ale">
+                    <h3>Ginger-ale</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/kik.png" alt="kik">
+                    <h3>KIK</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/lemonade.png" alt="lemonade">
+                    <h3>Lemonade</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/lime-crush.png" alt="lime-crush">
+                    <h3>Lime-Crush</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/necto.png" alt="necto">
+                    <h3>necto</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/orange-barley.png" alt="orange-barley">
+                    <h3>Orange-Barley</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/orangecrush.png" alt="orangecrush">
+                    <h3>Orange Crush</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/soda.png" alt="soda">
+                    <h3>Soda</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/refrehment/tonic.png" alt="tonic">
+                    <h3>Tonic</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="beverage-section">
+        <h1>Natural Blends</h1>
+        <div class="container">
+            <div class="row refreshment">
+                <div class="card">
+                    <img src="../img/beverages/natural/fito.png" alt="Fito">
+                    <h3>Fito</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/natural/twistee.png" alt="twistee">
+                    <h3>Twistee</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="beverage-section">
+        <h1>Nutrition</h1>
+        <div class="container">
+            <div class="row refreshment">
+                <div class="card">
+                    <img src="../img/beverages/nutrition/flavouredmilk.png" alt="Flavoured Milk">
+                    <h3>Flavoured Milk</h3>
+                </div>
+                <div class="card">
+                    <img src="../img/beverages/nutrition/milk.png" alt="Milk">
+                    <h3>Milk</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="active-hydration flex flex-wrap" style="width: 80%; margin: auto; height: fit-content;">
+        <div class="active" style="width: 45%; text-align: center; margin-bottom: 75px;">
+            <h1>Active</h1>
+            <div class="card" style="margin: auto;">
+                <img src="../img/beverages/active/wildelephant.png" alt="Wild Elephant img">
+                <h3>Wild Elephant</h3>
+            </div>
+        </div>
+        <div class="hydration" style="width: 45%; text-align: center; margin-bottom: 75px;">
+            <h1>Hydration</h1>
+            <div class="card" style="margin: auto;">
+                <img src="../img/beverages/hydration/water.png" alt="Elephanhouse Water">
+                <h3>Elephanthouse Water</h3>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------ Footer ------------------------------------------->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footerRows">
+                <div class="row1">
+                    <img src="../img/silver-best-corporate-award.png" alt="silver-best-corporate-award">
+                    <div class="contacts address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ceylon Cold Stores PLC,<br>148, Vauxhall Street, Colombo 02,<br>Sri Lanka.</p>
+                    </div>
+                    <div class="contacts phoneNumber">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+94 (0) 11 231 87 98</p>
+                    </div>
+                    <div class="contacts fax">
+                        <i class="fa-solid fa-fax"></i>
+                        <p>+94 (0) 11 244 74 22</p>
+                    </div>
+                    <div class="contacts email">
+                        <i class="fa-solid fa-at"></i>
+                        <p>info.ccs@keells.com</p>
+                    </div>
+                </div>
+                <div class="row2 row2Col">
+                    <div class="col1">
+                        <h4>CORPORATE</h4>
+                        <ul>
+                            <li>Our Company</li>
+                            <li>Heritage</li>
+                            <li>Life at CCS</li>
+                            <li>Careers</li>
+                            <li>Sustainability & CSR</li>
+                        </ul>
+                    </div>
+                    <div class="col2">
+                        <h4>EXPORT</h4>
+                        <ul>
+                            <li>Export Products</li>
+                            <li>Quality Certifications</li>
+                            <li>Export Inquiries</li>
+                        </ul>
+                    </div>
+                    <div class="col3">
+                        <h4>NEWSLETTER SIGN-UP</h4>
+                        <div class="subDiv">
+                            <input type="text" class="subMail" placeholder="Enter Your E-mail Address" name="subMail">
+                            <input type="submit" value="SUBSCRIBE" class="subMailBtn">
+                        </div>
+                    </div>
+                    <div class="col4">
+                        <h4>SHARE AND FOLLOW US</h4>
+                        <ul>
+                            <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+                            <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                            <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+                            <li><i class="fa-brands fa-linkedin"></i>Linkedin</li>
+                        </ul>
+                    </div>
+                    <div class="colSpanRow">
+                        <ul class="footerLinks">
+                            <li>Media Hub</li>
+                            <li>Financial Reports</li>
+                            <li>News</li>
+                            <li>Competition</li>
+                            <li>Contact Us</li>
+                            <li>Terms and Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Cookie Policy</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row3">
+                    <p class="copyRight">Elephant House - Copyright © 2022 Ceylon Cold Stores PLC. All Rights Reserved</p>
+                    <p class="designedBy">Chamod Rashmika - 2020/CSC/007</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------------------------------------------ Scroll to up button ------------------------------------------->
+    <div class="scrolltoupBtn" id="scrolltoupBtn" onclick="topFunction()" title="Go to top">
+        <img src="../img/up-arrowhead-in-a-circle.png" alt="">
+    </div>
+
+    <!------------------------------------------ JavaScript Section ------------------------------------------->
+    <script>
+        //------------------------ Go to top button function ----------------------------
+        window.onscroll = function() {
+            scrollFunction();
+            stickyNavbar()
+        };
+
+        //Get the button
+        var scrolltoupBtn = document.getElementById("scrolltoupBtn");
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrolltoupBtn.style.display = "block";
+            } else {
+                scrolltoupBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // --------------------------Sticky Navigation Bar-----------------------
+        // Get the navbar
+        var navBar = document.getElementById('middle-navBar');
+        var services = document.getElementById('services');
+
+        // Get the offset position of the navbar
+        var sticky = navBar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyNavbar() {
+        if (window.pageYOffset >= sticky) {
+            navBar.classList.add("sticky");
+            // navBar.style.background = "transparent";
+            services.style.marginTop = "90px";
+        } else {
+            navBar.classList.remove("sticky");
+            // navBar.style.background = "#222222";
+            services.style.marginTop = "";
+        };
+        };
+
+    </script>
+</body>
+</html>
